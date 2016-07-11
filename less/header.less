@@ -1,4 +1,15 @@
+@import "variables.less";
 * {
 	margin: 0;
 	padding: 0;
+}
+.navbar-header,
+.navbar-default .navbar-collapse {
+  background-color: #000033;
+  li {
+  	border-top: 1px solid @navbar-default-border;
+  	&:first-child {
+  		border-top: none;
+  	};
+  }
 }

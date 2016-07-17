@@ -172,6 +172,21 @@
           width: 142px;
         }
       }
+      .basket {
+        width: 92px;
+        height: 92px;
+        background: #1b242e; /* Для старых браузров */
+        background: linear-gradient(to top, #0e1821, #212833);
+        margin: 25px 0 0 0;
+        padding: 19px 28px 0 20px;
+        font-size: 12px;
+        a {
+          color: #fff;
+          .cart {
+            margin-bottom: 11px;
+          }
+        }
+      }
     }
     .navbar-collapse {
       background: #fff;
@@ -201,6 +216,18 @@
           }
 
         }
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+  .navbar-default {
+    .navbar-header {
+      .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }

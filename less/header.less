@@ -1,10 +1,9 @@
 @import "variables.less";
 @import "fonts.less";
 @import "font-awesome.less";
-body {
-  max-width: 320px;
-}
+
 @navbar-bg: #0d1721;
+@main-width: 1400px;
 
 * {
   margin: 0;
@@ -21,6 +20,10 @@ body {
 .navbar-default {
   background: none;
   .navbar-header {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
     position: relative;
     .navbar-brand {
       background-color: @navbar-bg;
@@ -68,7 +71,6 @@ body {
     }
 
     li {
-      border-top: 1px solid @navbar-default-border;
       text-align: center;
       font-size: 15px;
       a {
@@ -108,6 +110,96 @@ body {
         margin-top: 13px;
         img {
           padding: 5px 24px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs-max) {
+  body {
+    min-width: 320px;
+  }
+  .navbar-default {
+    .navbar-header {
+      .navbar-brand {
+        img {
+          width: 83px;
+          height: auto;
+        }
+      }
+    }
+    .navbar-collapse {
+      li {
+        border-top: 1px solid @navbar-default-border;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: @screen-sm-min) {
+  .navbar-default {
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar-header {
+      width: 100%;
+      height: 135px;
+      .clock {
+        width: 240px;
+        height: 92px;
+        background: url('../img/clock.png') no-repeat left center;
+        padding-left: 115px;
+        color: #fff;
+        margin-top: 25px;
+        padding-top: 19px;
+        font-size: 12px;
+        line-height: 18px;
+
+        .blue {
+          color: #aae8eb;
+        }
+      }
+      .navbar-brand {
+        width: 258px;
+        height: 175px;
+        padding-bottom: 0;
+        img {
+          width: 142px;
+        }
+      }
+    }
+    .navbar-collapse {
+      background: #fff;
+      margin-top: 135px;
+      border-bottom: 1px solid #ccc;
+      .navbar-nav {
+        float: none;
+        max-width: @main-width;
+        margin: 0 auto;
+        padding: 8px 0;
+        li {
+          width: 13.6%;
+          max-width: 190px;
+          &:nth-child(4) {
+            margin-right: 18%;
+          }
+          &:nth-child(7), &:nth-child(4)  {
+            a {
+              border-right: 1px solid #ccc;
+            }
+          }
+          a {
+            padding-left: 0;
+            padding-right: 0;
+            color: #414447;
+            border-left: 1px solid #ccc;
+          }
+
         }
       }
     }

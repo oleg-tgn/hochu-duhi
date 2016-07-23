@@ -1,3 +1,6 @@
+@import "variables.less";
+
+
 .navbar-default {
 	.home-slide {
 		height: 204px;
@@ -24,6 +27,18 @@
 	.col-xs-6 {
     height: 630px;
   }
+  .col-xs-6:first-child {
+  	border-image:
+      linear-gradient(to top, #e0e0e0, #fff) 1 100%;
+    border-style: solid;
+    border-width: 0 .5px 0 0;
+  }
+  .col-xs-6:second-child {
+    border-image:
+      linear-gradient(to top, #e0e0e0, #fff) 1 100%;
+    border-style: solid;
+    border-width: 0 0 0 .5px;
+  }
   .pink, .blue {
 		padding-left: 0;
   	padding-right: 0;
@@ -34,17 +49,59 @@
   	}
   }
 
+  .description {
+  	position: absolute;
+  	height: 37px;
+  	z-index: 10;
+  	bottom: 13px;
+  	background: @navbar-bg;
+  	color: #fff;
+  	width: 100%;
+  	.text-description {
+  		content: "";
+  		height: 0;
+	  	position: relative;
+	  	display: block;
+	  	height: 37px;
+	  	&:after {
+        content: "";
+        height: 0;
+        display: block;
+        border-top: 13px solid @navbar-bg;
+        position: absolute;
+        bottom: -12px;
+      }
+	  }
+  }
   .pink {
   	.image-wrap {
 	  	background-image: url('../img/graph-home-left.png');
+	  }
+	  .description {
+	  	.text-description {
+	  		&:after {
+          border-left: 20px solid transparent;
+          left: -20px;
+          right: 0;
+        }
+	  	}
 	  }
   }
 
   .blue {
   	.image-wrap {
 	  	background-image: url('../img/graph-home-right.png');
-
+	  }
+	  .description {
+	  	.text-description {
+	  		&:after {
+          border-right: 20px solid transparent;
+          left: 0;
+          right: -20px;
+        }
+	  	}
 	  }
   }
+
 
 }

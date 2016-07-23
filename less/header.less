@@ -21,8 +21,10 @@
   background: none;
   .navbar-header {
     .container {
+      position: relative;
       padding-left: 0;
       padding-right: 0;
+      background-color: @navbar-bg;
     }
     position: relative;
     .navbar-brand {
@@ -36,7 +38,7 @@
       border-radius: 100%;
       z-index: 100;
       img {
-        margin: 2px auto 0 auto;
+        margin: 0 auto;
       }
     }
   }
@@ -149,6 +151,24 @@
     .navbar-header {
       width: 100%;
       height: 135px;
+      .navbar-brand {
+        padding-top: 24px;
+      }
+      .container {
+        height: 135px;
+        &:after {
+          content: "";
+          height: 0;
+          display: block;
+          border-top: 13px solid @navbar-bg;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          position: absolute;
+          bottom: -12px;
+          left: -20px;
+          right: -20px;
+        }
+      }
       .clock {
         width: 240px;
         height: 92px;
@@ -159,13 +179,15 @@
         padding-top: 19px;
         font-size: 12px;
         line-height: 18px;
+        position: relative;
+        z-index: 110;
 
         .blue {
           color: #aae8eb;
         }
       }
       .navbar-brand {
-        width: 258px;
+        width: 365px;
         height: 175px;
         padding-bottom: 0;
         img {
@@ -184,6 +206,25 @@
           color: #fff;
           .cart {
             margin-bottom: 11px;
+          }
+        }
+      }
+      .phones {
+        margin: 20px 30px 0 0;
+        color: #c4c4c5;
+        line-height: 32px;
+        font-size: 18px;
+        position: relative;
+        z-index: 110;
+        .social {
+          text-align: right;
+          margin-top: 5px;
+          img {
+            display: inline-block;
+            margin: 0 13px;
+            &:last-child {
+              margin-right: 3px;
+            }
           }
         }
       }
@@ -220,6 +261,7 @@
     }
   }
 }
+
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
   .navbar-default {

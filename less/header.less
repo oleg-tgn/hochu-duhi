@@ -168,12 +168,10 @@
           height: 0;
           display: block;
           border-top: 13px solid @navbar-bg;
-          border-left: 20px solid transparent;
-          border-right: 20px solid transparent;
           position: absolute;
           bottom: -12px;
-          left: -20px;
-          right: -20px;
+          left: 0;
+          right: 0;
         }
       }
       .clock {
@@ -270,6 +268,21 @@
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-default {
+    .navbar-header {
+      .container {
+        &:after {
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          left: -20px;
+          right: -20px;
+        }
       }
     }
   }

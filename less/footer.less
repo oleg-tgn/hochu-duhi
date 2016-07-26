@@ -1,0 +1,60 @@
+@import "variables.less";
+
+footer {
+	margin-top: 67px;
+	height: 238px;
+	position: relative;
+	.home-slide	{
+		position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+		.col-xs-6 {
+			height: 238px;
+		}
+	}
+	.footer-black-wrapper {
+		position: relative;
+		top: 11px;
+		height: 227px;
+		background: @navbar-bg;
+	}
+	.navbar-brand {
+		padding: 0;
+		width: 141px;
+		height: auto;
+    margin: 35px 45px 0 -12px;
+	}
+	.collapse.navbar-collapse {
+		width: calc(~"100% - 141px - 45px");
+		float: left;
+		margin-top: 40px;
+		border-bottom: 1px solid #212933;
+		padding-left: 0;
+		padding-bottom: 20px;
+		.nav.navbar-nav {
+			width: 100%;
+			margin-left: -7px;
+		}
+		li {
+			width: (100% / 7);
+			a {
+				padding-left: 0;
+				padding-right: 0;
+				text-align: center;
+				color: #fff;
+				&:hover {
+					background: none;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1440px){
+	.container {
+	    width: 100%;
+	}
+}

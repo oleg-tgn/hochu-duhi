@@ -4,6 +4,20 @@ footer {
   margin-top: 67px;
   height: 238px;
   position: relative;
+
+  .container {
+    position: relative;
+    &:before {
+      content: "";
+      height: 0;
+      display: block;
+      border-bottom: 13px solid @navbar-bg;
+      position: absolute;
+      top: -12px;
+      left: 0;
+      right: 0;
+    }
+  }
   .home-slide {
     position: absolute;
     top: 0;
@@ -17,7 +31,7 @@ footer {
   }
   .footer-black-wrapper {
     position: relative;
-    top: 11px;
+    top: 13px;
     height: 227px;
     background: @navbar-bg;
   }
@@ -79,8 +93,21 @@ footer {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1440px){
+@media (max-width: 1400px){
   .container {
       width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  footer {
+    .container {
+      &:before {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        left: -20px;
+        right: -20px;
+      }
+    }
   }
 }

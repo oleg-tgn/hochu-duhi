@@ -70,11 +70,9 @@ body {
     padding-right: 0;
     padding-left: 0;
     border: none;
-    padding-top: 40px;
     .navbar-nav {
-      margin: 0;
+      margin: 40px 0 0 0;
     }
-
     li {
       text-align: center;
       font-size: 15px;
@@ -121,6 +119,9 @@ body {
   }
 }
 @media (max-width: @screen-xs-max) {
+  .navbar {
+    margin-bottom: 0;
+  }
   body {
     min-width: 320px;
   }
@@ -267,7 +268,6 @@ body {
     }
   }
 }
-
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
   .navbar-default {

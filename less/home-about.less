@@ -1,5 +1,6 @@
+@import "variables.less";
+
 .home-about {
-	padding-top: 71px;
 	background: url('../img/about-home-left.png');
 	background-repeat: no-repeat;
 	background-position: 0 100px;
@@ -19,7 +20,6 @@
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-		top: -59px;
 		background: #fff;
     padding: 0 21px;
 	}
@@ -49,5 +49,26 @@
     	margin: 0 auto;
 		}
 	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.home-about {
+		padding-top: 12px;
+		.title {
+			font-size: 22px;
+			top: -53px;
+		}
+	}
+}
+
+@media (min-width: @screen-sm-min) {
+	.home-about {
+		padding-top: 71px;
+		.title {
+			top: -59px;
+			font-size: 36px;
+		}
+	}
+
 }
 

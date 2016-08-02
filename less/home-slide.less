@@ -89,7 +89,6 @@
         display: block;
         width: 197px;
         height: 180px;
-        left: 443px;
         top: 294px;
       }
     }
@@ -137,6 +136,9 @@
         img {
           width: 76px;
         }
+        &:before {
+          display: none;
+        }
       }
       .description {
         .text-description {
@@ -181,13 +183,24 @@
     }
     .pink {
       .image-wrap {
-        padding-right: 10%;
+        padding-right: 30%;
         padding-top: 156px;
         &:before {
           width: 133px;
           height: 150px;
           top: 107px;
-          right: calc(190px + 10%);
+          right: calc(275px + 30%);
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: 113px;
+          height: 151px;
+          background: url('../img/duhi-woman-right-bottle.png');
+          background-size: 100%;
+          position: absolute;
+          right: 5%;
+          bottom: 132px;
         }
       }
       .description {
@@ -202,7 +215,10 @@
     }
     .blue {
       .image-wrap {
-        padding-left: 215px;
+        padding-left: 20%;
+        &:before {
+          left: 59%;
+        }
       }
       .description {
         .text-description {
@@ -234,11 +250,21 @@
   .home-slide-image-content {
     .pink {
       .image-wrap {
-        padding-right: 118px;
+        padding-right: 259px;
         &:before {
-          /*TODO: пробка */
-          /*  right: 413px;*/
-          right: 270px;
+          right: 413px;
+        }
+        &:after {
+          right: 124px;
+          bottom: 132px;
+        }
+      }
+    }
+    .blue {
+      .image-wrap {
+        padding-left: 215px;
+        &:before {
+          left: 443px;
         }
       }
     }

@@ -32,7 +32,6 @@ footer {
   .footer-black-wrapper {
     position: relative;
     top: 13px;
-    height: 227px;
     background: @navbar-bg;
   }
   .navbar-brand {
@@ -42,12 +41,6 @@ footer {
     margin: 24px 45px 0 0;
   }
   .collapse.navbar-collapse {
-    width: calc(~"100% - 141px - 45px");
-    float: left;
-    margin-top: 29px;
-    border-bottom: 1px solid #212933;
-    padding-left: 0;
-    padding-bottom: 20px;
     .nav.navbar-nav {
       width: 100%;
     }
@@ -93,6 +86,47 @@ footer {
   }
 }
 
+@media (max-width: @screen-xs-max) {
+  footer {
+    .navbar-brand {
+      width: 100%;
+      display: block;
+      margin: 0;
+      img {
+        margin: 0 auto;
+        width: 83px;
+      }
+    }
+    .collapse {
+      display: block;
+    }
+    .collapse.navbar-collapse {
+      padding-top: 64px;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  footer {
+    .navbar-brand {
+      margin: 24px 45px 0 0;
+    }
+    .collapse.navbar-collapse {
+      width: calc(~"100% - 141px - 45px");
+      float: left;
+      margin-top: 29px;
+      border-bottom: 1px solid #212933;
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+    .footer-black-wrapper {
+      height: 227px;
+    }
+
+  }
+}
+
+
 @media (max-width: 1400px){
   .container {
       width: 100%;
@@ -109,5 +143,6 @@ footer {
         right: -20px;
       }
     }
+
   }
 }

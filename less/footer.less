@@ -14,8 +14,6 @@ footer {
       border-bottom: 13px solid @navbar-bg;
       position: absolute;
       top: -12px;
-      left: 0;
-      right: 0;
     }
   }
   .home-slide {
@@ -93,7 +91,7 @@ footer {
       display: block;
       margin: 0;
       img {
-        margin: 0 auto;
+        margin: 7px auto 0 auto;
         width: 83px;
       }
     }
@@ -101,7 +99,32 @@ footer {
       display: block;
     }
     .collapse.navbar-collapse {
-      padding-top: 64px;
+      padding-top: 70px;
+      .phone {
+        text-align: center;
+        .social {
+          display: inline-block;
+        }
+      }
+    }
+    .navbar-nav {
+      margin: 0;
+    }
+    .email {
+      float: none!important;
+      display: block;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .container {
+      &:before {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        width: 200px;
+        left: 50%;
+        top: -11px;
+        transform: translateX(-50%);
+      }
     }
   }
 }
@@ -118,6 +141,12 @@ footer {
       border-bottom: 1px solid #212933;
       padding-left: 0;
       padding-bottom: 20px;
+    }
+    .container {
+      &:before {
+        left: 0;
+        right: 0;
+      }
     }
   }
 }

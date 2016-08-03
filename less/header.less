@@ -36,6 +36,8 @@ body {
       color: #fff;
       left: 50%;
       transform: translateX(-50%);
+      -webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateX(-50%); /* IE 9 */
       width: 171px;
       height: 95px;
       border-radius: 100%;

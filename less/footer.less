@@ -124,6 +124,8 @@ footer {
         left: 50%;
         top: -11px;
         transform: translateX(-50%);
+        -webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: translateX(-50%); /* IE 9 */
       }
     }
   }

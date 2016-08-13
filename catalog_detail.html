@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link rel="stylesheet" href="bootstrap/css/bootstrap.css"></head-->
+
+	<!-- Owl carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+	<link rel="stylesheet" href="css/photoswipe.css"> 
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_catalog.css">
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+	<script src="js/owl.carousel.min.js"></script>
+
+	<script src="js/photoswipe.min.js"></script> 
+	<script src="js/photoswipe-ui-default.min.js"></script> 
+
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	  	<div class="home-slide hidden-xs">
+				<div class="row">
+					<div class="col-xs-6 blue to-right"></div>
+					<div class="col-xs-6 blue"></div>
+				</div>
+			</div>
+
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	    	<div class="container">
+		    	<div class="clock hidden-xs pull-left">
+		    		<span class="blue">Интернет-магазин
+						элитной парфюмерии</span><br>
+						7 дней в неделю
+		    	</div>
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		      	<img src="img/logo.svg">
+		      </a>
+		      <div class="basket hidden-xs pull-right">
+	      		<a href="#">
+	      			<span class="cart pull-right"><img src="img/cart.png"></span>
+	      			Корзина
+	      		</a>
+	      	</div>
+	      	<div class="phones hidden-xs pull-right">
+							8 (499) 755-25-08<br>
+			        8 (926) 389-75-09
+			        <div class="social">
+			        	<img src="img/instagram.png">
+			        	<img src="img/vk.png">
+			        	<img src="img/facebook.png">
+			        </div>
+		      </div>
+		    </div>
+	    </div>
+<!--TODO: first li border-->
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	      	<li class="basket visible-xs"><a href="#">Корзина: 0 товаров <span class="cart pull-right"><img src="img/cart.png"></span></a></li>
+	        <li class=""><a href="#">Главная <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">О магазине</a></li>
+	        <li><a href="#">Спец. Преложения</a></li>
+	        <li><a href="#">Способы оплаты</a></li>
+	        <li><a href="#">Отзывы</a></li>
+	        <li><a href="#">Контакты</a></li>
+	        <li class="phone visible-xs">8 (499) 755-25-08<br>
+	        8 (926) 389-75-09
+	        <div class="social">
+	        	<img src="img/instagram.png">
+	        	<img src="img/vk.png">
+	        	<img src="img/facebook.png">
+	        </div></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+<!--TODO: open menu height bug "bubble" effect-->
+	</nav>
+
+<!-- begin content container-->
+	<div class=" catalog_container container-fluid">
+		<div class="catalog_bg_left"><div class="image"></div></div>
+		<div class="catalog_bg_right"><div class="image"></div></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 breadcrumbs">
+					<div class="row">
+						<a href="#">Главная</a>
+						<a href="">Каталог</a>
+						<span>Женские духи</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12 left_menu">
+					<div class="row left_menu_head">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="row">
+								<a class="btn left_menu_btn">Женские</a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="row">
+								<a class="btn left_menu_btn active">Мужские</a>
+							</div>
+						</div>
+					</div>
+					<div class="row left_menu_list ">
+						<ul>
+							<li>ACQUA DI PARMA</li>
+							<li>ADIDAS</li>
+							<li>ADIDAS ORIGINAL</li>
+							<li>AGONIST</li>
+							<li>AHAVA</li>
+							<li>AJMAL</li>
+							<li>ALAIA</li>
+							<li>ALDO COPPOLA</li>
+							<li>ALPHA HOMME</li>
+						</ul>
+					</div>
+				</div><!-- /.left_menu -->
+				<div class="col-md-9 col-sm-9 col-xs-12 catalog_main_section">
+					<div class=" sort_block">
+						<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 sort_by_ABC">
+							<ul class="row">
+								<li><a href="">А</a></li><li><a href="">B</a></li><li><a href="">C</a></li><li><a href="">D</a></li><li><a href="">E</a></li><li><a href="">F</a></li><li><a href="">G</a></li><li><a href="">H</a></li><li><a href="">I</a></li><li><a href="">J</a></li><li><a href="">K</a></li><li><a href="">L</a></li><li><a href="">M</a></li><li><a href="">N</a></li><li><a href="">O</a></li><li><a href="">P</a></li><li><a href="">Q</a></li><li><a href="">R</a></li><li><a href="">S</a></li><li><a href="">T</a></li><li><a href="">U</a></li><li><a href="">V</a></li><li><a href="">W</a></li><li><a href="">X</a></li><li><a href="">Y</a></li><li><a href="">Z</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search_block">
+								<input type="text" name="catalog_search" placeholder="Поиск" class="catalog_search">
+								<input type="submit" name="search_btn" id="search_btn" value="" class="btn search_btn">
+						</div>
+					</div><!-- /.sort_block -->
+
+					<div class="catalog_content">
+						<div class="catalog_content__title line_inner">
+							<h2><span class="content_line_left">Goti Live Earth</span><span class="line_right"></span></h2>
+							<!-- <div class="catalog_pagination catalog_content__pagination_top">
+								<a href="#" class="prev disabled"></a>
+								<a class="active" href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#" class="next"></a>
+							</div> -->
+						</div>
+
+						<div class="row product_card">
+							<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 product_card__gallery">
+								<div class="big-product "><a href="" ></a></div>
+								<div id="owl-slider-thumbnails">
+									<div>
+										<img src="img/product1.jpg" data-full-src="img/product1.jpg" alt="" data-size="413x480">
+									</div>
+									<div>
+										<img src="img/product1.jpg" data-full-src="img/product1.jpg" alt="" data-size="413x480">
+									</div>
+									<div>
+										<img src="img/product1.jpg" data-full-src="img/product1.jpg" alt="" data-size="413x480">
+									</div>
+									<div>
+										<img src="img/product1.jpg" data-full-src="img/product1.jpg" alt="" data-size="413x480">
+									</div>
+									<div>
+										<img src="img/product1.jpg" data-full-src="img/product1.jpg" alt="" data-size="413x480">
+									</div>
+									<div>
+										<img src="img/product1.jpg" data-full-src="img/product1.jpg" alt="" data-size="413x480">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 product_card__content">
+								<div class="product_card__content__model">Мужские духи</div>
+								<div class="product_card__content__desc">
+									<div class="product_card__content__title">Композиция</div>
+									<div class="product_card__content__text">Сандалово дерево, ноты цитруса, мятя, полосатые носки, мускус скунса, эекстракт полярного медведя. </div>
+								</div>
+								<div class="product_card__content__desc">
+									<div class="product_card__content__title">Описание товара</div>
+									<div class="product_card__content__text">Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья </div>
+								</div>
+								<div class="product_card_buy">
+									<div class="col-lg-2 hidden-md hidden-sm hidden-xs hidden_block"></div>
+									<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 product_card__price">23 000 <span class="rubl">&#8381;</span></div>
+									<div class="col-lg-3 col-md-6 col-sm-6 col-xs-5 product_card__amount">
+										<div class="input-group spinner">
+											<div class="input-group-btn">
+												<button class="btn spinner-down" type="button"><i class="fa fa-angle-left"></i></button>
+											</div>
+											<input type="text" class="form-control" value="1">
+											<div class="input-group-btn">
+												<button class="btn spinner-up" type="button"><i class="fa fa-angle-right"></i></button>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="hidden-lg hidden-md col-sm-4 hidden-xs"></div> -->
+									<a href="" class="col-lg-3 col-md-6 col-sm-6 col-xs-7 product_card__basket product_basket">В корзину <span class="basket_icon"></span>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 recommended_list">
+								<div class="catalog_content__title line_inner">
+									<h2><span class="content_line_left">Похожие товары</span><span class="line_right"></span></h2>
+								</div>
+								<div class="row product_card__recommeded_list">
+									<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+										<div class="catalog_content__product_item">
+											<div class="product_item_image"><img src="img/product-img1.jpg"></div>
+											<div class="product_item_title">Goti Духи 'Live Earth'</div>
+											<div class="row product_item_buy">
+												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_price">23 000 <span class="rubl">&#8381;</span> </div>
+												<a href="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_basket product_basket">В корзину <span class="basket_icon"></span></a>
+											</div>
+										</div>
+									</div><!-- /div.col  -->
+									<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+										<div class="catalog_content__product_item">
+											<div class="product_item_image"><img src="img/product-img1.jpg"></div>
+											<div class="product_item_title">Goti Духи 'Live Earth'</div>
+											<div class="row product_item_buy">
+												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_price">23 000 <span class="rubl">&#8381;</span> </div>
+												<a href="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_basket product_basket">В корзину <span class="basket_icon"></span></a>
+											</div>
+										</div>
+									</div><!-- /div.col  -->
+									<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+										<div class="catalog_content__product_item">
+											<div class="product_item_image"><img src="img/product-img1.jpg"></div>
+											<div class="product_item_title">Goti Духи 'Live Earth'</div>
+											<div class="row product_item_buy">
+												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_price">23 000 <span class="rubl">&#8381;</span> </div>
+												<a href="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_basket product_basket">В корзину <span class="basket_icon"></span></a>
+											</div>
+										</div>
+									</div><!-- /div.col  -->
+									<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+										<div class="catalog_content__product_item">
+											<div class="product_item_image"><img src="img/product-img1.jpg"></div>
+											<div class="product_item_title">Goti Духи 'Live Earth'</div>
+											<div class="row product_item_buy">
+												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_price">23 000 <span class="rubl">&#8381;</span> </div>
+												<a href="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product_item_basket product_basket">В корзину <span class="basket_icon"></span></a>
+											</div>
+										</div>
+									</div><!-- /div.col  -->
+								</div>
+							</div>
+						</div><!-- /.product_card -->
+						<!-- <div class="catalog_pagination catalog__pagination_bottom line_inner right_align">
+							<span class="line_left"></span>
+							<div class="catalog_content__pagination content_line_right">
+								<a href="#" class="prev disabled"></a>
+								<a class="active" href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#" class="next"></a>
+							</div>
+						</div> -->
+					</div>
+				</div><!-- /.catalog_main_section -->
+			</div>
+		</div><!-- /.container -->
+	</div>
+<!-- end content container-->
+
+	<footer>
+		<div class="home-slide hidden-xs">
+			<div class="row">
+				<div class="col-xs-6 blue to-right"></div>
+				<div class="col-xs-6 blue"></div>
+			</div>
+		</div>
+		<div class="footer-black-wrapper">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+		      <img src="img/logo.svg">
+		     </a>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class=""><a href="#">Главная <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">О магазине</a></li>
+		        <li><a href="#">Спец. Преложения</a></li>
+		        <li><a href="#">Способы оплаты</a></li>
+		        <li><a href="#">Отзывы</a></li>
+		        <li><a href="#">Контакты</a></li>
+		        <li class="phone">
+		        <div class="social">
+		        	<img src="img/insta.svg">
+		        	<img src="img/vk.svg">
+		        	<img src="img/facebook.svg">
+		        </div></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		    <div class="email pull-right">
+		    	<img src="img/mail.svg" class="mail-icon"> hochuduhi@gmail.com
+		    </div>
+			</div><!-- /.container -->
+			<div class="copyright">
+				2016 Все права защины. hochuduhi.ru Все права защищены
+			</div>
+		</div>
+	</footer>
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+	    <!-- Background of PhotoSwipe. 
+	         It's a separate element, as animating opacity is faster than rgba(). -->
+	    <div class="pswp__bg"></div>
+
+	    <!-- Slides wrapper with overflow:hidden. -->
+	    <div class="pswp__scroll-wrap">
+
+	        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+	        <div class="pswp__container">
+	            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	            <div class="pswp__item"></div>
+	        </div>
+
+	        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+	        <div class="pswp__ui pswp__ui--hidden">
+
+	            <div class="pswp__top-bar">
+
+	                <!--  Controls are self-explanatory. Order can be changed. -->
+
+	                <div class="pswp__counter"></div>
+
+	                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+	                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+	                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+	                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+	                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+	                <!-- element will get class pswp__preloader--active when preloader is running -->
+	                <div class="pswp__preloader">
+	                    <div class="pswp__preloader__icn">
+	                      <div class="pswp__preloader__cut">
+	                        <div class="pswp__preloader__donut"></div>
+	                      </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+	                <div class="pswp__share-tooltip"></div> 
+	            </div>
+
+	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+	            </button>
+
+	            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+	            </button>
+
+	            <div class="pswp__caption">
+	                <div class="pswp__caption__center"></div>
+	            </div>
+
+	          </div>
+
+	        </div>
+
+	</div>

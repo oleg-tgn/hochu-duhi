@@ -273,7 +273,6 @@ body {
     }
   }
 }
-
 @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
   .navbar-default {
     .navbar-header {
@@ -282,6 +281,15 @@ body {
         padding-left: 15px;
         padding-right: 15px;
       }
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+  .navbar-default .navbar-collapse .navbar-nav li {
+    height: 59px;
+    a {
+      height: 59px;
     }
   }
 }

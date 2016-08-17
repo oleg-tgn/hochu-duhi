@@ -9,6 +9,9 @@
 .home-slide .blue.to-right {
     background: linear-gradient(to right,#b7f5f7 0%,#caf8f9 10%, #fff 100%)
 }
+footer {
+	margin-top: 0;
+}
 
 
 /* ----------- */
@@ -24,11 +27,11 @@
 	top:0;
 	bottom:0;
 	overflow:hidden;
-	background: linear-gradient(to right,#b7f5f7 0%,#caf8f9 10%, #fff 100%);
+	background: linear-gradient(to right,#b7f5f7 0%,#ebfcfd 30%, #fff 100%);
 }
 .catalog_bg_left .image {
-	background: url(../img/catalog-left.png) 0 2% no-repeat;
-	background-size: contain;
+	background: url(../img/catalog-left.png) 100% 0 no-repeat;
+	/*background-size: contain;*/
 	position: absolute;
 	width: 126%;
 	height: 100%;
@@ -45,11 +48,11 @@
 	top:0;
 	bottom:0;
 	overflow:hidden;
-	background: linear-gradient(to left,#c3f7f8,#fff);
+	background: linear-gradient(to left,#c3f7f8 0%,#ebfcfd 30%, #fff 100%);
 }
 .catalog_bg_right .image {
-	background: url(../img/catalog-right.png) no-repeat;
-	background-size: contain;
+	background: url(../img/catalog-right.png) 0 0 no-repeat;
+	/*background-size: contain;*/
 	position: absolute;
 	width: 130%;
 	height: 100%;
@@ -542,6 +545,7 @@ color: black;
 
 .recommended_list {
 	margin-top:20px;
+	margin-bottom: 30px;
 }
 .recommended_list .catalog_content__title h2{
 	font-size: 30px;
@@ -603,7 +607,7 @@ color: black;
 		padding: 0;
 	}
 	.left_menu_list {
-		display: none;
+		/*display: none;*/
 	}
 	.catalog_content__pagination_top {
 		position: relative;

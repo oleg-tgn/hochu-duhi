@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
 
-	$('.spinner .btn.spinner-up').on('click', function() {
-		$('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
-	});
-	$('.spinner .btn.spinner-down').on('click', function() {
-		if ($('.spinner input').val() > 1) {
-			$('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
-		}
-	});
+	// $('#product_card__amount .spinner .btn.spinner-up').on('click', function() {
+	// 	$('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
+	// });
+	// $('#product_card__amount .spinner .btn.spinner-down').on('click', function() {
+	// 	if ($('.spinner input').val() > 1) {
+	// 		$('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+	// 	}
+	// });
 
 
 	$('#owl-slider-thumbnails').owlCarousel({
@@ -24,9 +24,9 @@ $(document).ready(function(){
 		autoPlay: false,
 		rewindSpeed: 1000,
 		slideSpeed: 300
-	});	
-	
-	
+	});
+
+
 	if(  $('#owl-slider-thumbnails').length  ){
 		var fullpicUrl = $('#owl-slider-thumbnails .owl-item:first').find("img").attr('data-full-src');
 		/*$('.product-header-wrap .big-product').css('background-image', 'url(' + fullpicUrl + ')');
@@ -35,11 +35,11 @@ $(document).ready(function(){
 		$('.product_card__gallery .big-product a').append('<img src='+fullpicUrl+' alt="" />').attr('href', fullpicUrl).attr('data-size', sizeImg);
 		$('#owl-slider-thumbnails .owl-item:first').addClass('active');
 	}
-	
+
 	$('#owl-slider-thumbnails .owl-item').click(function(){
 		$('#owl-slider-thumbnails .owl-item').removeClass('active');
 		$(this).addClass('active');
-		
+
 		var fullpicUrl = $(this).find("img").attr("data-full-src");
 		var sizeImg = $(this).find("img").attr('data-size');
 		$('.product_card__gallery .big-product img').attr( 'src', fullpicUrl);
@@ -63,7 +63,7 @@ $(document).ready(function(){
 		    for(var i = 0; i < numNodes; i++) {
 		        el = thumbElements[i];
 
-		        // include only element nodes 
+		        // include only element nodes
 		        if(el.nodeType !== 1) {
 		          continue;
 		        }
@@ -139,8 +139,8 @@ $(document).ready(function(){
 		        index;
 
 		    for (var i = 0; i < numChildNodes; i++) {
-		        if(childNodes[i].nodeType !== 1) { 
-		            continue; 
+		        if(childNodes[i].nodeType !== 1) {
+		            continue;
 		        }
 
 		        if(childNodes[i] === clickedListItem) {
@@ -169,10 +169,10 @@ $(document).ready(function(){
 		        if(!vars[i]) {
 		            continue;
 		        }
-		        var pair = vars[i].split('=');  
+		        var pair = vars[i].split('=');
 		        if(pair.length < 2) {
 		            continue;
-		        }           
+		        }
 		        params[pair[0]] = pair[1];
 		    }
 
@@ -200,7 +200,7 @@ $(document).ready(function(){
 		            // See Options->getThumbBoundsFn section of docs for more info
 		            var thumbnail = items[index].el.children[0],
 		                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-		                rect = thumbnail.getBoundingClientRect(); 
+		                rect = thumbnail.getBoundingClientRect();
 
 		            return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
 		        },
@@ -213,13 +213,13 @@ $(document).ready(function(){
 					captionEl.children[0].innerHTML = item.title +  '<br/><small>Photo: ' + item.author + '</small>';
 					return true;
 		        }
-				
+
 		    };
 
 
 		    if(fromURL) {
 		    	if(options.galleryPIDs) {
-		    		// parse real index when custom PIDs are used 
+		    		// parse real index when custom PIDs are used
 		    		// http://photoswipe.com/documentation/faq.html#custom-pid-in-url
 		    		for(var j = 0; j < items.length; j++) {
 		    			if(items[j].pid == index) {
@@ -285,7 +285,7 @@ $(document).ready(function(){
 			    		useLargeImages = true;
 			        	imageSrcWillChange = true;
 			    	}
-			        
+
 			    } else {
 			    	if(useLargeImages) {
 			    		useLargeImages = false;

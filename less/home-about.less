@@ -1,5 +1,15 @@
 @import "variables.less";
 
+.title {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: translateX(-50%); /* IE 9 */
+	background: #fff;
+  padding: 0 20px;
+}
+
 .home-about {
 	background: url('../img/about-home-left.png');
 	background-repeat: no-repeat;
@@ -16,15 +26,7 @@
 	.row {
 		position: relative;
 	}
-	.title {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		-webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-    -ms-transform: translateX(-50%); /* IE 9 */
-		background: #fff;
-    padding: 0 20px;
-	}
+
 	.image-wrap {
 		img {
 
@@ -49,12 +51,13 @@
 }
 
 @media (max-width: @screen-xs-max) {
+	.title {
+		font-size: 22px;
+		top: -53px;
+	}
 	.home-about {
 		padding-top: 12px;
-		.title {
-			font-size: 22px;
-			top: -53px;
-		}
+
 		.image-wrap {
 			padding: 0 0 0 0;
 			img {
@@ -76,12 +79,13 @@
 }
 
 @media (min-width: @screen-sm-min) {
+	.title {
+		top: -59px;
+		font-size: 36px;
+	}
 	.home-about {
 		padding-top: 71px;
-		.title {
-			top: -59px;
-			font-size: 36px;
-		}
+
 		.image-wrap {
 			padding: 61px 0 0 57px;
 			img {

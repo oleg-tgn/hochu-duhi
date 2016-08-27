@@ -186,12 +186,20 @@ footer {
 }
 .sort_by_ABC ul li {
 	float: left;
+	width: calc(100% / 26);
+	text-align: center;
 }
 .sort_by_ABC ul li a{
 	color: #414447;
-	padding: 0 0.53em;
-	margin: 0 2px;
+	padding: 0;
+	margin: 0;
 }
+@media (max-width: 767px) {
+	.sort_by_ABC ul li a {
+		font-size: 14px;
+	}
+}
+
 .sort_by_ABC ul li a:hover{
 	text-decoration: none;
 }
@@ -209,14 +217,24 @@ footer {
 	position: absolute;
 	width: 42px;
 	height: 42px;
-	background: url(../img/search-icon.png) right center no-repeat;
 	border-radius: 0;
 	top: 2px;
-	right: 0;
+	right: 1px;
+	font-size: 22px;
+	padding: 0;
+	line-height: 46px;
+}
+.search_btn, .search_btn:hover, .search_btn:focus {
+	background: -webkit-linear-gradient(-90deg, #212933 0%, #0d1721 100%);
+	background: -moz-linear-gradient(-90deg, #212933 0%, #0d1721 100%);
+	background: -o-linear-gradient(-90deg, #212933 0%, #0d1721 100%);
+	background: -ms-linear-gradient(-90deg, #212933 0%, #0d1721 100%);
+	background: linear-gradient(180deg, #212933 0%, #0d1721 100%);
+	color: #fff;
 }
 
 .catalog_content{
-	
+
 }
 
 .catalog_content__title  {
@@ -388,7 +406,7 @@ a.product_basket:hover {
 	right: 0;
 }
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(../img/grabbing.png) 8 8, move;
 }
 /* fix */

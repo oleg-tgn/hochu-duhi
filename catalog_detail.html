@@ -9,7 +9,7 @@
 	<!-- Owl carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 
-	<link rel="stylesheet" href="css/photoswipe.css"> 
+	<link rel="stylesheet" href="css/photoswipe.css">
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style_catalog.css">
@@ -18,8 +18,8 @@
 
 	<script src="js/owl.carousel.min.js"></script>
 
-	<script src="js/photoswipe.min.js"></script> 
-	<script src="js/photoswipe-ui-default.min.js"></script> 
+	<script src="js/photoswipe.min.js"></script>
+	<script src="js/photoswipe-ui-default.min.js"></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -141,8 +141,10 @@
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 search_block">
-								<input type="text" name="catalog_search" placeholder="Поиск" class="catalog_search">
-								<input type="submit" name="search_btn" id="search_btn" value="" class="btn search_btn">
+								<input type="text" name="catalog_search" placeholder="Я ищу" class="catalog_search">
+								<button name="search_btn" id="search_btn" value="" class="btn search_btn">
+									<i class="icon-search-btn"></i>
+								</button>
 						</div>
 					</div><!-- /.sort_block -->
 
@@ -317,7 +319,7 @@
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-	    <!-- Background of PhotoSwipe. 
+	    <!-- Background of PhotoSwipe.
 	         It's a separate element, as animating opacity is faster than rgba(). -->
 	    <div class="pswp__bg"></div>
 
@@ -361,7 +363,7 @@
 	            </div>
 
 	            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-	                <div class="pswp__share-tooltip"></div> 
+	                <div class="pswp__share-tooltip"></div>
 	            </div>
 
 	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">

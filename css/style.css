@@ -54,6 +54,10 @@ body {
 .navbar {
   border: 0;
 }
+.container {
+  width: 100%;
+  max-width: 1400px;
+}
 .navbar-header,
 .navbar-default .navbar-collapse {
   background-color: #0d1721;

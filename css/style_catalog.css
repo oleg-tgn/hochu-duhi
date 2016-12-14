@@ -583,6 +583,14 @@ color: black;
   font-size: 30px;
 }
 
+.catalog-nav-gradient {
+  float: right;
+  width: 452px;
+}
+.catalog-nav-gradient.to-right {
+  float: left;
+}
+
 @media (min-width: 1400px) {
   .left_menu {
     width: 250px;

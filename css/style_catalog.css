@@ -16,7 +16,18 @@ footer {
 .women.navbar-default .navbar-header .clock .blue {
   color: #fdcfff;
 }
+.social a {
+  color: #aae8eb;
+  display: inline-block;
+  margin: 0 13px;
+}
+.social .fa-instagram, .social .fa-facebook {
+  font-size: 16px;
+}
 
+.women .social a {
+  color: #fdcfff;  
+}
 #fdcfff
 /* ----------- */
 .catalog_container {

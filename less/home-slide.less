@@ -1,0 +1,269 @@
+.navbar-default {
+  .home-slide {
+    height: 204px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 0;
+    .col-xs-6 {
+      height: 204px;
+    }
+  }
+}
+
+.home-slide {
+  .pink {
+    background: linear-gradient(to right, #fce5fd, #fff);
+  }
+  .blue {
+    background: linear-gradient(to left, #c3f7f8, #fff);
+  }
+}
+
+.home-slide-image-content {
+  .col-xs-6:first-child {
+    border-image:
+      linear-gradient(to top, #e0e0e0, #fff) 1 100%;
+    border-style: solid;
+    border-width: 0 .5px 0 0;
+  }
+  .col-xs-6:second-child {
+    border-image:
+    linear-gradient(to top, #e0e0e0, #fff) 1 100%;
+    border-style: solid;
+    border-width: 0 0 0 .5px;
+  }
+  .pink, .blue {
+    padding-left: 0;
+    padding-right: 0;
+    .image-wrap {
+      background-repeat: no-repeat;
+      background-position-y: 67px;
+    }
+  }
+
+  .description {
+    position: absolute;
+    z-index: 10;
+    background: @navbar-bg;
+    color: #fff;
+    width: 100%;
+    .text-description {
+      content: "";
+      height: 0;
+      position: relative;
+      display: block;
+      &:after {
+        content: "";
+        height: 0;
+        display: block;
+        border-top: 13px solid @navbar-bg;
+        position: absolute;
+      }
+    }
+  }
+  .pink {
+    .image-wrap {
+      background-image: url('../img/graph-home-left.png');
+      position: relative;
+      &:before {
+        content: "";
+        background-image: url('../img/pink-bg-baterfly.png');
+        background-size: 100%;
+        position: absolute;
+        display: block;
+      }
+    }
+  }
+
+  .blue {
+    .image-wrap {
+      background-image: url('../img/graph-home-right.png');
+      &:before {
+        content: "";
+        background-image: url('../img/blue-bg-ice.png');
+        position: absolute;
+        display: block;
+        width: 197px;
+        height: 180px;
+        top: 294px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home-slide-image-content {
+    .col-xs-6 {
+      height: 276px;
+    }
+    .pink, .blue {
+      padding-left: 0;
+      padding-right: 0;
+      .image-wrap {
+        height: 240px;
+      }
+    }
+    .pink {
+      .image-wrap {
+        padding: 67px 16px 0 0;
+        img {
+          width: 108px;
+        }
+        &:before {
+          width: 60px;
+          height: 73px;
+          right: 85px;
+          top: 46px;
+        }
+      }
+      .description {
+        .text-description {
+          padding: 0 21px 0 0;
+          &:after {
+            border-left: 20px solid transparent;
+            right: 0;
+          }
+        }
+      }
+    }
+    .blue {
+      .image-wrap {
+        padding: 49px 0 0 45px;
+        img {
+          width: 76px;
+        }
+        &:before {
+          display: none;
+        }
+      }
+      .description {
+        .text-description {
+          padding: 0 0 0 21px;
+          &:after {
+            border-right: 20px solid transparent;
+            left: 0;
+          }
+        }
+      }
+    }
+    .description {
+      height: 29px;
+      .text-description {
+        text-align: center;
+        font-size: 14px;
+        height: 29px;
+        line-height: 29px;
+        padding: 0 21px 0 0;
+        &:after {
+          width: 92px;
+          bottom: -6px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home-slide-image-content {
+
+    .col-xs-6 {
+      height: 630px;
+    }
+    .pink, .blue {
+      padding-left: 0;
+      padding-right: 0;
+      .image-wrap {
+        height: 630px;
+        padding: 111px 0 0 0;
+      }
+    }
+    .pink {
+      .image-wrap {
+        padding-right: 30%;
+        padding-top: 156px;
+        &:before {
+          width: 133px;
+          height: 150px;
+          top: 107px;
+          right: calc(275px + 30%);
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: 113px;
+          height: 151px;
+          background: url('../img/duhi-woman-right-bottle.png');
+          background-size: 100%;
+          position: absolute;
+          right: 5%;
+          bottom: 132px;
+        }
+      }
+      .description {
+        .text-description {
+          &:after {
+            border-left: 20px solid transparent;
+            left: -20px;
+            right: 0;
+          }
+        }
+      }
+    }
+    .blue {
+      .image-wrap {
+        padding-left: 20%;
+        &:before {
+          left: 59%;
+        }
+      }
+      .description {
+        .text-description {
+          &:after {
+            border-right: 20px solid transparent;
+            left: 0;
+            right: -20px;
+          }
+        }
+      }
+    }
+    .description {
+      height: 37px;
+      bottom: 13px;
+      .text-description {
+        height: 37px;
+        font-size: 20px;
+        line-height: 37px;
+        padding: 5px 38px 0 38px;
+        &:after {
+          bottom: -12px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-slide-image-content {
+    .pink {
+      .image-wrap {
+        padding-right: 259px;
+        &:before {
+          right: 413px;
+        }
+        &:after {
+          right: 124px;
+          bottom: 132px;
+        }
+      }
+    }
+    .blue {
+      .image-wrap {
+        padding-left: 215px;
+        &:before {
+          left: 443px;
+        }
+      }
+    }
+  }
+}

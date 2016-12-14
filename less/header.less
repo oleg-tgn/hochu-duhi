@@ -1,0 +1,314 @@
+@import "fonts.less";
+
+@navbar-bg: #0d1721;
+@main-width: 1400px;
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  border: 0;
+}
+.navbar-header,
+.navbar-default .navbar-collapse {
+  background-color: @navbar-bg;
+}
+
+.navbar-default {
+  background: none;
+  .navbar-header {
+    .container {
+      position: relative;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: @navbar-bg;
+    }
+    position: relative;
+    .navbar-brand {
+      background-color: @navbar-bg;
+      position: absolute;
+      color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateX(-50%); /* IE 9 */
+      width: 171px;
+      height: 95px;
+      border-radius: 100%;
+      z-index: 100;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  .navbar-toggle {
+    &, &:hover, &:focus{
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 11px;
+      padding-bottom: 10px;
+      background-color: #fe924a;
+      margin-right: 0;
+      border: 0;
+      border-radius: 0;
+      .icon-bar {
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+      }
+      &.collapsed {
+        background-color: #fff1cf;
+      }
+    }
+  }
+  .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    .navbar-nav {
+      margin: 40px 0 0 0;
+    }
+    li {
+      text-align: center;
+      font-size: 15px;
+      a {
+        letter-spacing: 0.7px;
+        padding-top: 11px;
+        padding-bottom: 8px;
+      }
+      &:nth-child(2) {
+        border-top: none;
+      }
+      &.basket {
+        border: none;
+        background-color: #131d26;
+        a {
+          font-size: 14px;
+          color: #a2adb9;
+          padding-right: 19px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          margin-left: -22px;
+          .cart {
+            color: #fff;
+            font-size: 30px;
+            margin-top: -8px;
+          }
+        }
+      }
+      &.phone {
+        font-family: 'Times New Roman', sans-serif;
+        color: #cccccc;
+        font-size: 16px;
+        padding: 14px 0;
+        line-height: 29px;
+        letter-spacing: 0;
+      }
+      .social {
+        margin-top: 13px;
+        img {
+          padding: 5px 24px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    margin-bottom: 0;
+  }
+  body {
+    min-width: 320px;
+  }
+  .navbar-default {
+    .navbar-header {
+      z-index: 10;
+      .navbar-brand {
+        img {
+          width: 83px;
+          height: auto;
+        }
+      }
+    }
+    .navbar-collapse {
+      /*magic pixel*/
+      top: -1px;
+      position: relative;
+      li {
+        border-top: 1px solid #e7e7e7;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navbar-default {
+    margin-bottom: 0;
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar-header {
+      width: 100%;
+      height: 135px;
+      .navbar-brand {
+        width: 26%;
+        height: 175px;
+        padding-bottom: 0;
+        margin-left: 0;
+        padding-top: 24px;
+        img {
+          width: 142px;
+        }
+      }
+      .container {
+        height: 135px;
+        &:after {
+          content: "";
+          height: 0;
+          display: block;
+          border-top: 13px solid @navbar-bg;
+          position: absolute;
+          bottom: -12px;
+          left: 0;
+          right: 0;
+        }
+      }
+      .clock {
+        width: 240px;
+        height: 92px;
+        background: url('../img/clock.png') no-repeat left center;
+        padding-left: 115px;
+        color: #fff;
+        margin-top: 25px;
+        padding-top: 19px;
+        font-size: 12px;
+        line-height: 18px;
+        position: relative;
+        z-index: 110;
+
+        .blue {
+          color: #aae8eb;
+        }
+      }
+
+      .basket {
+        width: 92px;
+        height: 92px;
+        background: #1b242e; /* Для старых браузров */
+        background: linear-gradient(to top, #0e1821, #212833);
+        margin: 25px 0 0 0;
+        padding: 19px 28px 0 20px;
+        font-size: 12px;
+        a {
+          color: #fff;
+          .cart {
+            margin-bottom: 11px;
+          }
+        }
+      }
+      .phones {
+        margin: 20px 30px 0 0;
+        color: #c4c4c5;
+        line-height: 32px;
+        font-size: 18px;
+        position: relative;
+        z-index: 110;
+        .social {
+          text-align: right;
+          margin-top: 5px;
+          img {
+            display: inline-block;
+            margin: 0 13px;
+            &:last-child {
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+    .navbar-collapse {
+      background: #fff;
+      margin-top: 147px;
+      padding-top: 0;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      z-index: 10;
+      .navbar-nav {
+        float: none;
+        max-width: @main-width;
+        margin: 0 auto;
+        padding: 8px 0;
+        li {
+          width: 13.5%;
+          max-width: 190px;
+          &:nth-child(4) {
+            margin-right: 19%;
+          }
+          &:nth-child(7), &:nth-child(4)  {
+            a {
+              border-right: 1px solid #ccc;
+            }
+          }
+          a {
+            padding-left: 0;
+            padding-right: 0;
+            color: #414447;
+            border-left: 1px solid #ccc;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar-default {
+    .navbar-header {
+      .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .navbar-default .navbar-collapse .navbar-nav li {
+    height: 59px;
+    a {
+      height: 59px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-default {
+    .navbar-header {
+      .navbar-brand {
+        width: 365px;
+        img {
+          width: 142px;
+        }
+      }
+      .container {
+        &:after {
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          left: -20px;
+          right: -20px;
+        }
+      }
+    }
+  }
+}

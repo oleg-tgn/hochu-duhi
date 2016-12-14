@@ -19,49 +19,57 @@ footer {
   position: relative;
 }
 .catalog_bg_left {
-  background-image: url(../img/catalog-left.png);
   position: absolute;
-  width: 50%;
-  height: 100%;
+  width: 452px;  
   left: 0;
   top:0;
   bottom:0;
   overflow:hidden;
-  background: linear-gradient(to right,#b7f5f7 0%,#ebfcfd 30%, #fff 100%);
+  z-index: -1;
 }
-.catalog_bg_left .image {
-  background: url(../img/catalog-left.png) 100% 0 no-repeat;
-  /*background-size: contain;*/
-  position: absolute;
-  width: 126%;
-  height: 100%;
-  margin-left: -20%;
-  left: 0;
-  top:0;
-  bottom:0;
-}
+
 .catalog_bg_right {
   position: absolute;
-  width: 50%;
-  height: 100%;
+  width: 452px;  
   right: 0;
   top:0;
   bottom:0;
   overflow:hidden;
-  background: linear-gradient(to left,#c3f7f8 0%,#ebfcfd 30%, #fff 100%);
+  z-index: -1;
 }
-.catalog_bg_right .image {
-  background: url(../img/catalog-right.png) 0 0 no-repeat;
-  /*background-size: contain;*/
-  position: absolute;
-  width: 130%;
-  height: 100%;
-  right: 0;
-  margin-right: -26%;
-  top:0;
-  bottom:0;
-  overflow:hidden;
+
+.catalog_bg_left.men {
+  background: -webkit-linear-gradient(0deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: -moz-linear-gradient(0deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: -o-linear-gradient(0deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: -ms-linear-gradient(0deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: linear-gradient(90deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
 }
+
+.catalog_bg_right.men {
+  background: -webkit-linear-gradient(180deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: -moz-linear-gradient(180deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: -o-linear-gradient(180deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: -ms-linear-gradient(180deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+  background: linear-gradient(-90deg, #b7f5f7 0%, rgba(183, 245, 247, 0.501961) 30%, rgba(183, 245, 247, 0) 100%);
+}
+
+.catalog_container.container-fluid.men {
+  background: url(../img/catalog-bg-men.png) no-repeat;
+  background-size: 100%;
+}
+
+.catalog_container.container-fluid.women {
+  background: url(../img/catalog-bg-men.png) no-repeat;
+  background-size: 100%;
+}
+.home-slide .pink {
+  background: linear-gradient(to left, #fce5fd, #ffffff);
+}
+.home-slide .pink.to-right {
+  background: linear-gradient(to right, #fce5fd, #ffffff);
+}
+
 .no-margin {
   margin: 0;
 }

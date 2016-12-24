@@ -379,6 +379,7 @@ footer {
 .product_item_descr__text {
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 100%;
 }
 .product_item_buy {
   border-top: 1px solid #e0e0e0;

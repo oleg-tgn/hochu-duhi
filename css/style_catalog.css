@@ -370,9 +370,15 @@ footer {
 }
 .product_item_descr {
   color: #666666;
+  height: 74px;
+  overflow: hidden;
   padding: 14px 8px;
   font-size: 14px;
   line-height: 1.2;
+}
+.product_item_descr__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product_item_buy {
   border-top: 1px solid #e0e0e0;

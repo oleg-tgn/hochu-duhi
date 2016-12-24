@@ -51,12 +51,22 @@ body {
   margin: 0;
   padding: 0;
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin: 0;
+}
 .navbar {
   border: 0;
-}
-.container {
-  width: 100%;
-  max-width: 1400px;
 }
 .navbar-header,
 .navbar-default .navbar-collapse {
@@ -567,15 +577,43 @@ body {
   }
 }
 .title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-  -ms-transform: translateX(-50%);
-  /* IE 9 */
+  /*position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  /*-ms-transform: translateX(-50%);  */
+  /*background: #fff;
+  padding: 0 20px;*/
+}
+.title.home-main-title {
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+.title.home-main-title .title-text {
+  display: inline-block;
   background: #fff;
+  position: relative;
+  z-index: 10;
   padding: 0 20px;
+}
+.title.home-main-title:before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background: #fdd8ff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.title.home-main-title:after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background: #b8f5f7;
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 .home-about {
   background: url('../img/about-home-left.png');
@@ -592,9 +630,6 @@ body {
 }
 .home-about .row {
   position: relative;
-}
-.home-about .about {
-  margin-bottom: 66px;
 }
 .home-about .payment {
   text-align: center;
@@ -624,6 +659,9 @@ body {
   }
   .home-about .text-wrap {
     margin-top: -66px;
+  }
+  .home-about .payment {
+    padding-top: 30px;
   }
   .home-about .payments-icons .col-xs-12 {
     padding-top: 10px;

@@ -88,11 +88,13 @@ footer {
 .catalog_container.container-fluid.men {
   background: url(../img/catalog-bg-men.png) no-repeat;
   background-size: 100%;
+  position: relative;
 }
 
 .catalog_container.container-fluid.women {
   background: url(../img/catalog-bg-women.png) no-repeat;
   background-size: 100%;
+  position: relative;
 }
 .home-slide .pink {
   background: linear-gradient(to left, #fce5fd, #ffffff);

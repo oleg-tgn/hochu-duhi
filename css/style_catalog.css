@@ -649,8 +649,9 @@ color: black;
   margin-top:20px;
   margin-bottom: 30px;
 }
+
 .recommended_list .catalog_content__title h2{
-  font-size: 30px;
+  font-size: 30px;  
 }
 
 .catalog-nav-gradient {
@@ -660,6 +661,10 @@ color: black;
 .catalog-nav-gradient.to-right {
   float: left;
 }
+
+  .catalog_content__title {
+    padding-top: 20px;
+  }
 
 @media (min-width: 1400px) {
   .left_menu {
@@ -707,6 +712,7 @@ color: black;
   .product_card__content {
     margin-top: 20px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -724,4 +730,5 @@ color: black;
     text-align: right;
     bottom: 0;
   }
+
 }

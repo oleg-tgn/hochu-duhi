@@ -32,7 +32,13 @@ footer {
 /* ----------- */
 .catalog_container {
   position: relative;
+  min-height: calc(100vh - 203px - 274px); /*203px - высота хедера, 274px - высота футера  */ 
 }
+.catalog_container.container-fluid {
+  position: relative; 
+  min-height: calc(100vh - 203px - 274px); /*203px - высота хедера, 274px - высота футера  */
+}
+
 .catalog_bg_left {
   position: absolute;
   width: 452px;  

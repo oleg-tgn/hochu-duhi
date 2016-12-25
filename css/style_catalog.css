@@ -395,6 +395,9 @@ footer {
 .fa.fa-rub {
   color: #666666;
 }
+.catalog_content__product-link {
+  display: block;
+}
 .product_basket {
   /*padding: 11px 10px;*/
   background: linear-gradient(to top,#0d1721,#212933);

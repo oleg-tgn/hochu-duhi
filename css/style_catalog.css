@@ -678,7 +678,7 @@ color: black;
   }
   .catalog_main_section {
     margin-top: 26px;
-    margin-left: 33px;
+    padding-left: 33px;
     width: 1116px;
   }
   .catalog_content__title h2{

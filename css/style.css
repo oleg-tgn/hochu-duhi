@@ -399,6 +399,8 @@ h3,
   height: 0;
   position: relative;
   display: block;
+  color: #fff;
+  text-decoration: none;
 }
 .home-slide-image-content .description .text-description:after {
   content: "";
